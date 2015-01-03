@@ -1,14 +1,24 @@
 (ns myproject.core
-    (:require [reagent.core :as reagent :refer [atom]]
-              [goog.events :as events]
-              [goog.history.EventType :as EventType])
-    (:import goog.History))
+  (:require [om.core :as om]
+            [om-tools.core :refer-macros [defcomponent defcomponentk]]
+            [om-tools.dom :as dom :include-macros true]))
 
-(defn child [name]
-  [:p "Hi, I am " name])
+(defn log [msg]
+  (.log js/console msg))
 
-(defn childcaller []
-  [child "Brent"])
+(defcomponent child-component [name owner]
+  (did-mount [_]
+    (log owner) ; This is the child-component itself
+    (log "mounted child-component"))
+  (render [_]
+    (dom/h1 "Hi, I am " name "!")))
 
-(reagent/render-component [childcaller]
-                           (.getElementById js/document "app"))
+(defcomponentk parent-component [owner [:data name age]]
+  (render [_]
+    (log name) ; See the above destructuring syntax
+    (log age)
+    (om/build child-component name)))
+
+(defn ^:export main [container-id]
+  (om/root parent-component {:name "Brent" :age 28}
+           {:target (.getElementById js/document container-id)}))
