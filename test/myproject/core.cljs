@@ -4,20 +4,23 @@
   (:use [jayq.core :only [$ html]])
   (:require [om.core :as om]
             [om.dom :as dom :include-macros true]
+            [cljs.core.async :refer [chan]]
             [cemerick.cljs.test :as t]
-            [myproject.core :as subject]))
+            [myproject.test-helper :refer [om->$ om-root->$]]
+            [myproject.core :refer [child-component root-component]]))
 
 (enable-console-print!)
 
-(defn om->$ [c opts]
-  ($ (dom/render-to-str (om/build c opts))))
+(def app-state
+  (atom {:person {:name "Brent!" :age 28}
+         :channel (chan)}))
 
 (deftest child-component-test
-  (is (= (.text (om->$ subject/child-component "Some name"))
-         "Hi, I am Some name!")))
+  (is (= (.text (om->$ child-component @app-state))
+         "Hi, I am Brent!!")))
 
 (deftest parent-component
-  (is (= (.text (om->$ subject/parent-component {:name "Brent" :age 28}))
-         "Hi, I am Brent!")))
+  (is (= (.text (om-root->$ root-component app-state))
+         "Hi, I am Brent!!")))
 
 (run-tests)

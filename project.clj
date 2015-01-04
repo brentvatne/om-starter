@@ -13,6 +13,7 @@
                  [prismatic/om-tools "0.3.10"]
                  [jayq "2.5.2"]
                  [org.clojure/clojurescript "0.0-2511" :scope "provided"]
+                 [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [leiningen "2.5.0"]]
 
   :plugins [[lein-cljsbuild "1.0.4-SNAPSHOT"]
