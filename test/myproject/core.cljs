@@ -12,15 +12,15 @@
 (enable-console-print!)
 
 (def app-state
-  (atom {:person {:name "Brent!" :age 28}
-         :channel (chan)}))
+  (atom {:people [{:name "Brent!" :age 28}
+                  {:name "Haley!" :age 25}]}))
 
 (deftest child-component-test
-  (is (= (.text (om->$ child-component @app-state))
+  (is (= (.text (om->$ child-component (first (get @app-state :people))))
          "Hi, I am Brent!!")))
 
 (deftest parent-component
   (is (= (.text (om-root->$ root-component app-state))
-         "Hi, I am Brent!!")))
+         "List of peopleHi, I am Brent!!Hi, I am Haley!!")))
 
 (run-tests)

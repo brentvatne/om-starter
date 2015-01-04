@@ -33479,8 +33479,8 @@ myproject.core.dispatch = function(a, b) {
       throw Error([cljs.core.str("No matching clause: "), cljs.core.str(a)].join(""));;
   }
 };
-var ufv___33725 = schema.utils.use_fn_validation, output_schema33713_33726 = schema.core.Any, input_schema33714_33727 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "person", "person", 580724652, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker33715_33728 = schema.core.checker.call(null, input_schema33714_33727), 
-output_checker33716_33729 = schema.core.checker.call(null, output_schema33713_33726);
+var ufv___33933 = schema.utils.use_fn_validation, output_schema33921_33934 = schema.core.Any, input_schema33922_33935 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "person", "person", 580724652, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker33923_33936 = schema.core.checker.call(null, input_schema33922_33935), 
+output_checker33924_33937 = schema.core.checker.call(null, output_schema33921_33934);
 myproject.core.child_component = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -33493,26 +33493,26 @@ myproject.core.child_component = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof myproject.core.t33722 && (myproject.core.t33722 = function(a, b, c, d, e, f, h, k, l, m, n, aa) {
-          this.owner = a;
-          this.G__33717 = b;
-          this.output_schema33713 = c;
-          this.input_checker33715 = d;
-          this.person = e;
-          this.output_checker33716 = f;
-          this.G__33718 = h;
-          this.input_schema33714 = k;
-          this.child_component = l;
+        return "undefined" === typeof myproject.core.t33930 && (myproject.core.t33930 = function(a, b, c, d, e, f, h, k, l, m, n, aa) {
+          this.G__33925 = a;
+          this.owner = b;
+          this.G__33926 = c;
+          this.input_schema33922 = d;
+          this.output_schema33921 = e;
+          this.output_checker33924 = f;
+          this.person = h;
+          this.child_component = k;
+          this.input_checker33923 = l;
           this.validate__7313__auto__ = m;
           this.ufv__ = n;
-          this.meta33723 = aa;
+          this.meta33931 = aa;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, myproject.core.t33722.prototype.om$core$IDisplayName$ = !0, myproject.core.t33722.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, myproject.core.t33930.prototype.om$core$IDisplayName$ = !0, myproject.core.t33930.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "child-component";
           };
-        }(l, a, b, c, d, e), myproject.core.t33722.prototype.om$core$IRender$ = !0, myproject.core.t33722.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.t33930.prototype.om$core$IRender$ = !0, myproject.core.t33930.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
             return cljs.core.apply.call(null, React.DOM.h1, {onClick:om_tools.dom.format_opts.call(null, function(a, b, c, d, e, f, h) {
@@ -33521,23 +33521,23 @@ myproject.core.child_component = function(a, b, c, d, e) {
               };
             }(this, a, b, c, d, e, f))}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Hi, I am ", cljs.core.get.call(null, k.person, new cljs.core.Keyword(null, "name", "name", 1843675177)), "!"], null)));
           };
-        }(l, a, b, c, d, e), myproject.core.t33722.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.t33930.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta33723;
+            return this.meta33931;
           };
-        }(l, a, b, c, d, e), myproject.core.t33722.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.t33930.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new myproject.core.t33722(this.owner, this.G__33717, this.output_schema33713, this.input_checker33715, this.person, this.output_checker33716, this.G__33718, this.input_schema33714, this.child_component, this.validate__7313__auto__, this.ufv__, b);
+            return new myproject.core.t33930(this.G__33925, this.owner, this.G__33926, this.input_schema33922, this.output_schema33921, this.output_checker33924, this.person, this.child_component, this.input_checker33923, this.validate__7313__auto__, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), myproject.core.t33722.cljs$lang$type = !0, myproject.core.t33722.cljs$lang$ctorStr = "myproject.core/t33722", myproject.core.t33722.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.t33930.cljs$lang$type = !0, myproject.core.t33930.cljs$lang$ctorStr = "myproject.core/t33930", myproject.core.t33930.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "myproject.core/t33722");
+            return cljs.core._write.call(null, b, "myproject.core/t33930");
           };
-        }(l, a, b, c, d, e), myproject.core.__GT_t33722 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.__GT_t33930 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new myproject.core.t33722(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new myproject.core.t33930(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new myproject.core.t33722(k, h, b, d, h, e, k, c, f, l, a, null);
+        }(l, a, b, c, d, e)), new myproject.core.t33930(h, k, k, c, b, e, h, f, d, l, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -33546,8 +33546,8 @@ myproject.core.child_component = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___33725, output_schema33713_33726, input_schema33714_33727, input_checker33715_33728, output_checker33716_33729);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, myproject.core.child_component), schema.core.make_fn_schema.call(null, output_schema33713_33726, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema33714_33727], null)));
+}(ufv___33933, output_schema33921_33934, input_schema33922_33935, input_checker33923_33936, output_checker33924_33937);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, myproject.core.child_component), schema.core.make_fn_schema.call(null, output_schema33921_33934, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema33922_33935], null)));
 myproject.core.__GT_child_component = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, myproject.core.child_component, a);
@@ -33566,17 +33566,17 @@ myproject.core.__GT_child_component = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var component_fnk__9132__auto___33754 = function() {
+var component_fnk__9132__auto___33962 = function() {
   var a = schema.utils.use_fn_validation, b = schema.core.Any, c = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, new cljs.core.PersistentArrayMap.fromArray([schema.core.Keyword, schema.core.Any, new cljs.core.Keyword(null, "data", "data", -232669377), new cljs.core.PersistentArrayMap.fromArray([schema.core.Keyword, schema.core.Any, new cljs.core.Keyword(null, "people", "people", 1443537404), schema.core.Any], !0, !1), new cljs.core.Keyword(null, 
-  "owner", "owner", -392611939), schema.core.Any], !0, !1), new cljs.core.Symbol(null, "map33738", "map33738", -136695773, null))], null), d = schema.core.checker.call(null, c), e = schema.core.checker.call(null, b);
+  "owner", "owner", -392611939), schema.core.Any], !0, !1), new cljs.core.Symbol(null, "map33946", "map33946", -1102370185, null))], null), d = schema.core.checker.call(null, c), e = schema.core.checker.call(null, b);
   return schema.core.schematize_fn.call(null, function(a, b, c, d, e) {
     return function n(p) {
       var q = a.get_cell();
       if (cljs.core.truth_(q)) {
         var r = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [p], null), s = d.call(null, r);
         if (cljs.core.truth_(s)) {
-          throw cljs.core.ex_info.call(null, schema.utils.format_STAR_.call(null, "Input to %s does not match schema: %s", new cljs.core.Symbol(null, "constructor33736", "constructor33736", 1812141177, null), cljs.core.pr_str.call(null, s)), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "error", "error", -978969032), s, new cljs.core.Keyword(null, "value", "value", 305978217), r, new cljs.core.Keyword(null, "schema", "schema", -1582001791), c, new cljs.core.Keyword(null, 
-          "type", "type", 1174270348), new cljs.core.Keyword("schema.core", "error", "schema.core/error", 1991454308)], null));
+          throw cljs.core.ex_info.call(null, schema.utils.format_STAR_.call(null, "Input to %s does not match schema: %s", new cljs.core.Symbol(null, "constructor33944", "constructor33944", 34073008, null), cljs.core.pr_str.call(null, s)), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "error", "error", -978969032), s, new cljs.core.Keyword(null, "value", "value", 305978217), r, new cljs.core.Keyword(null, "schema", "schema", -1582001791), c, new cljs.core.Keyword(null, "type", 
+          "type", 1174270348), new cljs.core.Keyword("schema.core", "error", "schema.core/error", 1991454308)], null));
         }
       }
       r = function() {
@@ -33586,52 +33586,52 @@ var component_fnk__9132__auto___33754 = function() {
           }
           var r = plumbing.fnk.schema.safe_get.call(null, p, new cljs.core.Keyword(null, "owner", "owner", -392611939), cljs.core.PersistentVector.EMPTY), s = plumbing.fnk.schema.safe_get.call(null, p, new cljs.core.Keyword(null, "data", "data", -232669377), cljs.core.PersistentVector.EMPTY), v = plumbing.fnk.schema.safe_get.call(null, s, new cljs.core.Keyword(null, "people", "people", 1443537404), new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, 
           "data", "data", -232669377)], null));
-          "undefined" === typeof myproject.core.t33748 && (myproject.core.t33748 = function(a, b, c, d, e, f, g, h, k, l, n, p, q) {
-            this.map33739 = a;
-            this.map33738 = b;
-            this.people = c;
-            this.owner = d;
-            this.output_schema33740 = e;
-            this.output_checker33743 = f;
-            this.G__33744 = g;
-            this.constructor33736 = h;
-            this.input_checker33742 = k;
-            this.input_schema33741 = l;
+          "undefined" === typeof myproject.core.t33956 && (myproject.core.t33956 = function(a, b, c, d, e, f, g, h, k, l, n, p, q) {
+            this.people = a;
+            this.owner = b;
+            this.input_checker33950 = c;
+            this.input_schema33949 = d;
+            this.output_schema33948 = e;
+            this.constructor33944 = f;
+            this.G__33952 = g;
+            this.output_checker33951 = h;
+            this.map33946 = k;
+            this.map33947 = l;
             this.validate__7313__auto__ = n;
             this.ufv__ = p;
-            this.meta33749 = q;
+            this.meta33957 = q;
             this.cljs$lang$protocol_mask$partition1$ = 0;
             this.cljs$lang$protocol_mask$partition0$ = 393216;
-          }, myproject.core.t33748.prototype.om$core$IDisplayName$ = !0, myproject.core.t33748.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f, g, h, k) {
+          }, myproject.core.t33956.prototype.om$core$IDisplayName$ = !0, myproject.core.t33956.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f, g, h, k) {
             return function(a) {
               return "root-component";
             };
-          }(v, s, r, q, a, b, c, d, e), myproject.core.t33748.prototype.om$core$IRender$ = !0, myproject.core.t33748.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f, g, h, k) {
+          }(v, s, r, q, a, b, c, d, e), myproject.core.t33956.prototype.om$core$IRender$ = !0, myproject.core.t33956.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f, g, h, k) {
             return function(a) {
               return om_tools.dom.element.call(null, React.DOM.div, React.DOM.h1(null, "List of people"), new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, om_tools.dom.div, cljs.core.PersistentArrayMap.EMPTY, om.core.build_all.call(null, myproject.core.child_component, this.people))], null));
             };
-          }(v, s, r, q, a, b, c, d, e), myproject.core.t33748.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f, g, h, k) {
+          }(v, s, r, q, a, b, c, d, e), myproject.core.t33956.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f, g, h, k) {
             return function(a) {
-              return this.meta33749;
+              return this.meta33957;
             };
-          }(v, s, r, q, a, b, c, d, e), myproject.core.t33748.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f, g, h, k) {
+          }(v, s, r, q, a, b, c, d, e), myproject.core.t33956.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f, g, h, k) {
             return function(a, b) {
-              return new myproject.core.t33748(this.map33739, this.map33738, this.people, this.owner, this.output_schema33740, this.output_checker33743, this.G__33744, this.constructor33736, this.input_checker33742, this.input_schema33741, this.validate__7313__auto__, this.ufv__, b);
+              return new myproject.core.t33956(this.people, this.owner, this.input_checker33950, this.input_schema33949, this.output_schema33948, this.constructor33944, this.G__33952, this.output_checker33951, this.map33946, this.map33947, this.validate__7313__auto__, this.ufv__, b);
             };
-          }(v, s, r, q, a, b, c, d, e), myproject.core.t33748.cljs$lang$type = !0, myproject.core.t33748.cljs$lang$ctorStr = "myproject.core/t33748", myproject.core.t33748.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f, g, h, k) {
+          }(v, s, r, q, a, b, c, d, e), myproject.core.t33956.cljs$lang$type = !0, myproject.core.t33956.cljs$lang$ctorStr = "myproject.core/t33956", myproject.core.t33956.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f, g, h, k) {
             return function(a, b, c) {
-              return cljs.core._write.call(null, b, "myproject.core/t33748");
+              return cljs.core._write.call(null, b, "myproject.core/t33956");
             };
-          }(v, s, r, q, a, b, c, d, e), myproject.core.__GT_t33748 = function(a, b, c, d, e, f, g, h, k) {
+          }(v, s, r, q, a, b, c, d, e), myproject.core.__GT_t33956 = function(a, b, c, d, e, f, g, h, k) {
             return function(a, b, c, d, e, f, g, h, k, l, n, p, q) {
-              return new myproject.core.t33748(a, b, c, d, e, f, g, h, k, l, n, p, q);
+              return new myproject.core.t33956(a, b, c, d, e, f, g, h, k, l, n, p, q);
             };
           }(v, s, r, q, a, b, c, d, e));
-          return new myproject.core.t33748(s, p, v, r, b, e, p, n, d, c, q, a, null);
+          return new myproject.core.t33956(v, r, d, c, b, n, p, e, p, s, q, a, null);
         }
       }();
       if (cljs.core.truth_(q) && (s = e.call(null, r), cljs.core.truth_(s))) {
-        throw cljs.core.ex_info.call(null, schema.utils.format_STAR_.call(null, "Output of %s does not match schema: %s", new cljs.core.Symbol(null, "constructor33736", "constructor33736", 1812141177, null), cljs.core.pr_str.call(null, s)), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "error", "error", -978969032), s, new cljs.core.Keyword(null, "value", "value", 305978217), r, new cljs.core.Keyword(null, "schema", "schema", -1582001791), b, new cljs.core.Keyword(null, "type", 
+        throw cljs.core.ex_info.call(null, schema.utils.format_STAR_.call(null, "Output of %s does not match schema: %s", new cljs.core.Symbol(null, "constructor33944", "constructor33944", 34073008, null), cljs.core.pr_str.call(null, s)), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "error", "error", -978969032), s, new cljs.core.Keyword(null, "value", "value", 305978217), r, new cljs.core.Keyword(null, "schema", "schema", -1582001791), b, new cljs.core.Keyword(null, "type", 
         "type", 1174270348), new cljs.core.Keyword("schema.core", "error", "schema.core/error", 1991454308)], null));
       }
       return r;
@@ -33659,7 +33659,7 @@ myproject.core.root_component = function(a) {
     c.cljs$core$IFn$_invoke$arity$variadic = b;
     return c;
   }();
-}(component_fnk__9132__auto___33754);
+}(component_fnk__9132__auto___33962);
 myproject.core.__GT_root_component = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, myproject.core.root_component, a);

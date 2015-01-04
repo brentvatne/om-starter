@@ -35152,8 +35152,8 @@ myproject.core.dispatch = function(a, b) {
       throw Error([cljs.core.str("No matching clause: "), cljs.core.str(a)].join(""));;
   }
 };
-var ufv___33829 = schema.utils.use_fn_validation, output_schema33817_33830 = schema.core.Any, input_schema33818_33831 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "person", "person", 580724652, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker33819_33832 = schema.core.checker.call(null, input_schema33818_33831), 
-output_checker33820_33833 = schema.core.checker.call(null, output_schema33817_33830);
+var ufv___34037 = schema.utils.use_fn_validation, output_schema34025_34038 = schema.core.Any, input_schema34026_34039 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "person", "person", 580724652, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker34027_34040 = schema.core.checker.call(null, input_schema34026_34039), 
+output_checker34028_34041 = schema.core.checker.call(null, output_schema34025_34038);
 myproject.core.child_component = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35166,26 +35166,26 @@ myproject.core.child_component = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof myproject.core.t33826 && (myproject.core.t33826 = function(a, b, c, d, e, f, h, k, l, m, n, aa) {
+        return "undefined" === typeof myproject.core.t34034 && (myproject.core.t34034 = function(a, b, c, d, e, f, h, k, l, m, n, aa) {
           this.owner = a;
-          this.input_schema33818 = b;
-          this.output_schema33817 = c;
-          this.input_checker33819 = d;
-          this.person = e;
-          this.output_checker33820 = f;
-          this.G__33822 = h;
-          this.G__33821 = k;
-          this.child_component = l;
-          this.validate__7313__auto__ = m;
-          this.ufv__ = n;
-          this.meta33827 = aa;
+          this.input_checker34027 = b;
+          this.G__34030 = c;
+          this.person = d;
+          this.output_schema34025 = e;
+          this.output_checker34028 = f;
+          this.G__34029 = h;
+          this.child_component = k;
+          this.validate__7313__auto__ = l;
+          this.ufv__ = m;
+          this.input_schema34026 = n;
+          this.meta34035 = aa;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, myproject.core.t33826.prototype.om$core$IDisplayName$ = !0, myproject.core.t33826.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, myproject.core.t34034.prototype.om$core$IDisplayName$ = !0, myproject.core.t34034.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "child-component";
           };
-        }(l, a, b, c, d, e), myproject.core.t33826.prototype.om$core$IRender$ = !0, myproject.core.t33826.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.t34034.prototype.om$core$IRender$ = !0, myproject.core.t34034.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
             return cljs.core.apply.call(null, React.DOM.h1, {onClick:om_tools.dom.format_opts.call(null, function(a, b, c, d, e, f, h) {
@@ -35194,23 +35194,23 @@ myproject.core.child_component = function(a, b, c, d, e) {
               };
             }(this, a, b, c, d, e, f))}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Hi, I am ", cljs.core.get.call(null, k.person, new cljs.core.Keyword(null, "name", "name", 1843675177)), "!"], null)));
           };
-        }(l, a, b, c, d, e), myproject.core.t33826.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.t34034.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta33827;
+            return this.meta34035;
           };
-        }(l, a, b, c, d, e), myproject.core.t33826.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.t34034.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new myproject.core.t33826(this.owner, this.input_schema33818, this.output_schema33817, this.input_checker33819, this.person, this.output_checker33820, this.G__33822, this.G__33821, this.child_component, this.validate__7313__auto__, this.ufv__, b);
+            return new myproject.core.t34034(this.owner, this.input_checker34027, this.G__34030, this.person, this.output_schema34025, this.output_checker34028, this.G__34029, this.child_component, this.validate__7313__auto__, this.ufv__, this.input_schema34026, b);
           };
-        }(l, a, b, c, d, e), myproject.core.t33826.cljs$lang$type = !0, myproject.core.t33826.cljs$lang$ctorStr = "myproject.core/t33826", myproject.core.t33826.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.t34034.cljs$lang$type = !0, myproject.core.t34034.cljs$lang$ctorStr = "myproject.core/t34034", myproject.core.t34034.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "myproject.core/t33826");
+            return cljs.core._write.call(null, b, "myproject.core/t34034");
           };
-        }(l, a, b, c, d, e), myproject.core.__GT_t33826 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), myproject.core.__GT_t34034 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new myproject.core.t33826(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new myproject.core.t34034(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new myproject.core.t33826(k, c, b, d, h, e, k, h, f, l, a, null);
+        }(l, a, b, c, d, e)), new myproject.core.t34034(k, d, k, h, b, e, h, f, l, a, c, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35219,8 +35219,8 @@ myproject.core.child_component = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___33829, output_schema33817_33830, input_schema33818_33831, input_checker33819_33832, output_checker33820_33833);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, myproject.core.child_component), schema.core.make_fn_schema.call(null, output_schema33817_33830, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema33818_33831], null)));
+}(ufv___34037, output_schema34025_34038, input_schema34026_34039, input_checker34027_34040, output_checker34028_34041);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, myproject.core.child_component), schema.core.make_fn_schema.call(null, output_schema34025_34038, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema34026_34039], null)));
 myproject.core.__GT_child_component = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, myproject.core.child_component, a);
@@ -35239,17 +35239,17 @@ myproject.core.__GT_child_component = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var component_fnk__9132__auto___33858 = function() {
+var component_fnk__9132__auto___34066 = function() {
   var a = schema.utils.use_fn_validation, b = schema.core.Any, c = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, new cljs.core.PersistentArrayMap.fromArray([schema.core.Keyword, schema.core.Any, new cljs.core.Keyword(null, "data", "data", -232669377), new cljs.core.PersistentArrayMap.fromArray([schema.core.Keyword, schema.core.Any, new cljs.core.Keyword(null, "people", "people", 1443537404), schema.core.Any], !0, !1), new cljs.core.Keyword(null, 
-  "owner", "owner", -392611939), schema.core.Any], !0, !1), new cljs.core.Symbol(null, "map33842", "map33842", -629259604, null))], null), d = schema.core.checker.call(null, c), e = schema.core.checker.call(null, b);
+  "owner", "owner", -392611939), schema.core.Any], !0, !1), new cljs.core.Symbol(null, "map34050", "map34050", 2040829681, null))], null), d = schema.core.checker.call(null, c), e = schema.core.checker.call(null, b);
   return schema.core.schematize_fn.call(null, function(a, b, c, d, e) {
     return function n(p) {
       var q = a.get_cell();
       if (cljs.core.truth_(q)) {
         var r = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [p], null), s = d.call(null, r);
         if (cljs.core.truth_(s)) {
-          throw cljs.core.ex_info.call(null, schema.utils.format_STAR_.call(null, "Input to %s does not match schema: %s", new cljs.core.Symbol(null, "constructor33840", "constructor33840", 1316761041, null), cljs.core.pr_str.call(null, s)), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "error", "error", -978969032), s, new cljs.core.Keyword(null, "value", "value", 305978217), r, new cljs.core.Keyword(null, "schema", "schema", -1582001791), c, new cljs.core.Keyword(null, 
-          "type", "type", 1174270348), new cljs.core.Keyword("schema.core", "error", "schema.core/error", 1991454308)], null));
+          throw cljs.core.ex_info.call(null, schema.utils.format_STAR_.call(null, "Input to %s does not match schema: %s", new cljs.core.Symbol(null, "constructor34048", "constructor34048", 492613491, null), cljs.core.pr_str.call(null, s)), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "error", "error", -978969032), s, new cljs.core.Keyword(null, "value", "value", 305978217), r, new cljs.core.Keyword(null, "schema", "schema", -1582001791), c, new cljs.core.Keyword(null, "type", 
+          "type", 1174270348), new cljs.core.Keyword("schema.core", "error", "schema.core/error", 1991454308)], null));
         }
       }
       r = function() {
@@ -35259,52 +35259,52 @@ var component_fnk__9132__auto___33858 = function() {
           }
           var r = plumbing.fnk.schema.safe_get.call(null, p, new cljs.core.Keyword(null, "owner", "owner", -392611939), cljs.core.PersistentVector.EMPTY), s = plumbing.fnk.schema.safe_get.call(null, p, new cljs.core.Keyword(null, "data", "data", -232669377), cljs.core.PersistentVector.EMPTY), u = plumbing.fnk.schema.safe_get.call(null, s, new cljs.core.Keyword(null, "people", "people", 1443537404), new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, 
           "data", "data", -232669377)], null));
-          "undefined" === typeof myproject.core.t33852 && (myproject.core.t33852 = function(a, b, c, d, e, f, g, h, k, l, n, p, q) {
+          "undefined" === typeof myproject.core.t34060 && (myproject.core.t34060 = function(a, b, c, d, e, f, g, h, k, l, n, p, q) {
             this.people = a;
-            this.map33843 = b;
-            this.owner = c;
-            this.output_checker33847 = d;
-            this.map33842 = e;
-            this.input_checker33846 = f;
-            this.constructor33840 = g;
-            this.output_schema33844 = h;
-            this.G__33848 = k;
-            this.validate__7313__auto__ = l;
-            this.ufv__ = n;
-            this.input_schema33845 = p;
-            this.meta33853 = q;
+            this.owner = b;
+            this.output_checker34055 = c;
+            this.G__34056 = d;
+            this.output_schema34052 = e;
+            this.input_checker34054 = f;
+            this.map34050 = g;
+            this.map34051 = h;
+            this.constructor34048 = k;
+            this.input_schema34053 = l;
+            this.validate__7313__auto__ = n;
+            this.ufv__ = p;
+            this.meta34061 = q;
             this.cljs$lang$protocol_mask$partition1$ = 0;
             this.cljs$lang$protocol_mask$partition0$ = 393216;
-          }, myproject.core.t33852.prototype.om$core$IDisplayName$ = !0, myproject.core.t33852.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f, g, h, k) {
+          }, myproject.core.t34060.prototype.om$core$IDisplayName$ = !0, myproject.core.t34060.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f, g, h, k) {
             return function(a) {
               return "root-component";
             };
-          }(u, s, r, q, a, b, c, d, e), myproject.core.t33852.prototype.om$core$IRender$ = !0, myproject.core.t33852.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f, g, h, k) {
+          }(u, s, r, q, a, b, c, d, e), myproject.core.t34060.prototype.om$core$IRender$ = !0, myproject.core.t34060.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f, g, h, k) {
             return function(a) {
               return om_tools.dom.element.call(null, React.DOM.div, React.DOM.h1(null, "List of people"), new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, om_tools.dom.div, cljs.core.PersistentArrayMap.EMPTY, om.core.build_all.call(null, myproject.core.child_component, this.people))], null));
             };
-          }(u, s, r, q, a, b, c, d, e), myproject.core.t33852.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f, g, h, k) {
+          }(u, s, r, q, a, b, c, d, e), myproject.core.t34060.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f, g, h, k) {
             return function(a) {
-              return this.meta33853;
+              return this.meta34061;
             };
-          }(u, s, r, q, a, b, c, d, e), myproject.core.t33852.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f, g, h, k) {
+          }(u, s, r, q, a, b, c, d, e), myproject.core.t34060.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f, g, h, k) {
             return function(a, b) {
-              return new myproject.core.t33852(this.people, this.map33843, this.owner, this.output_checker33847, this.map33842, this.input_checker33846, this.constructor33840, this.output_schema33844, this.G__33848, this.validate__7313__auto__, this.ufv__, this.input_schema33845, b);
+              return new myproject.core.t34060(this.people, this.owner, this.output_checker34055, this.G__34056, this.output_schema34052, this.input_checker34054, this.map34050, this.map34051, this.constructor34048, this.input_schema34053, this.validate__7313__auto__, this.ufv__, b);
             };
-          }(u, s, r, q, a, b, c, d, e), myproject.core.t33852.cljs$lang$type = !0, myproject.core.t33852.cljs$lang$ctorStr = "myproject.core/t33852", myproject.core.t33852.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f, g, h, k) {
+          }(u, s, r, q, a, b, c, d, e), myproject.core.t34060.cljs$lang$type = !0, myproject.core.t34060.cljs$lang$ctorStr = "myproject.core/t34060", myproject.core.t34060.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f, g, h, k) {
             return function(a, b, c) {
-              return cljs.core._write.call(null, b, "myproject.core/t33852");
+              return cljs.core._write.call(null, b, "myproject.core/t34060");
             };
-          }(u, s, r, q, a, b, c, d, e), myproject.core.__GT_t33852 = function(a, b, c, d, e, f, g, h, k) {
+          }(u, s, r, q, a, b, c, d, e), myproject.core.__GT_t34060 = function(a, b, c, d, e, f, g, h, k) {
             return function(a, b, c, d, e, f, g, h, k, l, n, p, q) {
-              return new myproject.core.t33852(a, b, c, d, e, f, g, h, k, l, n, p, q);
+              return new myproject.core.t34060(a, b, c, d, e, f, g, h, k, l, n, p, q);
             };
           }(u, s, r, q, a, b, c, d, e));
-          return new myproject.core.t33852(u, s, r, e, p, d, n, b, p, q, a, c, null);
+          return new myproject.core.t34060(u, r, e, p, b, d, p, s, n, c, q, a, null);
         }
       }();
       if (cljs.core.truth_(q) && (s = e.call(null, r), cljs.core.truth_(s))) {
-        throw cljs.core.ex_info.call(null, schema.utils.format_STAR_.call(null, "Output of %s does not match schema: %s", new cljs.core.Symbol(null, "constructor33840", "constructor33840", 1316761041, null), cljs.core.pr_str.call(null, s)), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "error", "error", -978969032), s, new cljs.core.Keyword(null, "value", "value", 305978217), r, new cljs.core.Keyword(null, "schema", "schema", -1582001791), b, new cljs.core.Keyword(null, "type", 
+        throw cljs.core.ex_info.call(null, schema.utils.format_STAR_.call(null, "Output of %s does not match schema: %s", new cljs.core.Symbol(null, "constructor34048", "constructor34048", 492613491, null), cljs.core.pr_str.call(null, s)), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "error", "error", -978969032), s, new cljs.core.Keyword(null, "value", "value", 305978217), r, new cljs.core.Keyword(null, "schema", "schema", -1582001791), b, new cljs.core.Keyword(null, "type", 
         "type", 1174270348), new cljs.core.Keyword("schema.core", "error", "schema.core/error", 1991454308)], null));
       }
       return r;
@@ -35332,7 +35332,7 @@ myproject.core.root_component = function(a) {
     c.cljs$core$IFn$_invoke$arity$variadic = b;
     return c;
   }();
-}(component_fnk__9132__auto___33858);
+}(component_fnk__9132__auto___34066);
 myproject.core.__GT_root_component = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, myproject.core.root_component, a);
@@ -36116,7 +36116,8 @@ cemerick.cljs.test.set_print_fn_BANG_ = function(a) {
 goog.exportSymbol("cemerick.cljs.test.set_print_fn_BANG_", cemerick.cljs.test.set_print_fn_BANG_);
 myproject.core.test = {};
 cljs.core.enable_console_print_BANG_.call(null);
-myproject.core.test.app_state = cljs.core.atom.call(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "person", "person", -1059806875), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "name", "name", 1843675177), "Brent!", new cljs.core.Keyword(null, "age", "age", -604307804), 28], null), new cljs.core.Keyword(null, "channel", "channel", 734187692), cljs.core.async.chan.call(null)], null));
+myproject.core.test.app_state = cljs.core.atom.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "people", "people", 1443537404), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "name", "name", 1843675177), "Brent!", new cljs.core.Keyword(null, "age", "age", -604307804), 28], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "name", 
+"name", 1843675177), "Haley!", new cljs.core.Keyword(null, "age", "age", -604307804), 25], null)], null)], null));
 myproject.core.test.child_component_test = function() {
   return cemerick.cljs.test.test_function.call(null, cemerick.cljs.test.init_test_environment.call(null), myproject.core.test.child_component_test);
 };
@@ -36132,20 +36133,22 @@ myproject.core.test.child_component_test = cljs.core.with_meta.call(null, myproj
         cemerick.cljs.test._STAR_test_ctx_STAR_ = cljs.core.truth_(d) ? null : a;
         try {
           try {
-            var g = cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, "Hi, I am Brent!!"), myproject.test_helper.om__GT_$.call(null, myproject.core.child_component, cljs.core.deref.call(null, myproject.core.test.app_state)).text()), f = cljs.core.apply.call(null, cljs.core._EQ_, g);
+            var g = cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, "Hi, I am Brent!!"), myproject.test_helper.om__GT_$.call(null, myproject.core.child_component, cljs.core.first.call(null, cljs.core.get.call(null, cljs.core.deref.call(null, myproject.core.test.app_state), new cljs.core.Keyword(null, "people", "people", 1443537404)))).text()), f = cljs.core.apply.call(null, cljs.core._EQ_, g);
             if (f instanceof cemerick.cljs.test.TestContext) {
               throw Error("TestContext provided as [form] in `is` assertion. If using `is` with an explicit test context, use the 3-arg arity.");
             }
             cljs.core.truth_(f) ? cemerick.cljs.test.do_report.call(null, a, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "type", "type", 1174270348), new cljs.core.Keyword(null, "pass", "pass", 1574159993), new cljs.core.Keyword(null, "expected", "expected", 1583670997), cljs.core.list(new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), cljs.core.list(new cljs.core.Symbol(null, ".text", ".text", -1996712275, null), cljs.core.list(new cljs.core.Symbol(null, "om-\x3e$", 
-            "om-\x3e$", -332208109, null), new cljs.core.Symbol(null, "child-component", "child-component", -574562502, null), cljs.core.list(new cljs.core.Symbol("clojure.core", "deref", "clojure.core/deref", 188719157, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)))), "Hi, I am Brent!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), cljs.core.cons.call(null, cljs.core._EQ_, g), new cljs.core.Keyword(null, "message", "message", -406056002), null], null)) : 
-            cemerick.cljs.test.do_report.call(null, a, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "type", "type", 1174270348), new cljs.core.Keyword(null, "fail", "fail", 1706214930), new cljs.core.Keyword(null, "expected", "expected", 1583670997), cljs.core.list(new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), cljs.core.list(new cljs.core.Symbol(null, ".text", ".text", -1996712275, null), cljs.core.list(new cljs.core.Symbol(null, "om-\x3e$", "om-\x3e$", 
-            -332208109, null), new cljs.core.Symbol(null, "child-component", "child-component", -574562502, null), cljs.core.list(new cljs.core.Symbol("clojure.core", "deref", "clojure.core/deref", 188719157, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)))), "Hi, I am Brent!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, cljs.core.cons.call(null, new cljs.core.Symbol(null, "\x3d", 
-            "\x3d", -1501502141, null), g)), new cljs.core.Symbol(null, "not", "not", 1044554643, null)), new cljs.core.Keyword(null, "message", "message", -406056002), null], null));
+            "om-\x3e$", -332208109, null), new cljs.core.Symbol(null, "child-component", "child-component", -574562502, null), cljs.core.list(new cljs.core.Symbol(null, "first", "first", 996428481, null), cljs.core.list(new cljs.core.Symbol(null, "get", "get", -971253014, null), cljs.core.list(new cljs.core.Symbol("clojure.core", "deref", "clojure.core/deref", 188719157, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), new cljs.core.Keyword(null, "people", "people", 
+            1443537404))))), "Hi, I am Brent!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), cljs.core.cons.call(null, cljs.core._EQ_, g), new cljs.core.Keyword(null, "message", "message", -406056002), null], null)) : cemerick.cljs.test.do_report.call(null, a, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "type", "type", 1174270348), new cljs.core.Keyword(null, "fail", "fail", 1706214930), new cljs.core.Keyword(null, "expected", "expected", 1583670997), cljs.core.list(new cljs.core.Symbol(null, 
+            "\x3d", "\x3d", -1501502141, null), cljs.core.list(new cljs.core.Symbol(null, ".text", ".text", -1996712275, null), cljs.core.list(new cljs.core.Symbol(null, "om-\x3e$", "om-\x3e$", -332208109, null), new cljs.core.Symbol(null, "child-component", "child-component", -574562502, null), cljs.core.list(new cljs.core.Symbol(null, "first", "first", 996428481, null), cljs.core.list(new cljs.core.Symbol(null, "get", "get", -971253014, null), cljs.core.list(new cljs.core.Symbol("clojure.core", 
+            "deref", "clojure.core/deref", 188719157, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), new cljs.core.Keyword(null, "people", "people", 1443537404))))), "Hi, I am Brent!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, cljs.core.cons.call(null, new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), g)), new cljs.core.Symbol(null, "not", "not", 1044554643, 
+            null)), new cljs.core.Keyword(null, "message", "message", -406056002), null], null));
             return f;
           } catch (h) {
             if (h instanceof Error) {
               return cemerick.cljs.test.do_report.call(null, a, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "type", "type", 1174270348), new cljs.core.Keyword(null, "error", "error", -978969032), new cljs.core.Keyword(null, "expected", "expected", 1583670997), cljs.core.list(new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), cljs.core.list(new cljs.core.Symbol(null, ".text", ".text", -1996712275, null), cljs.core.list(new cljs.core.Symbol(null, "om-\x3e$", "om-\x3e$", 
-              -332208109, null), new cljs.core.Symbol(null, "child-component", "child-component", -574562502, null), cljs.core.list(new cljs.core.Symbol("clojure.core", "deref", "clojure.core/deref", 188719157, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)))), "Hi, I am Brent!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), h, new cljs.core.Keyword(null, "message", "message", -406056002), null], null));
+              -332208109, null), new cljs.core.Symbol(null, "child-component", "child-component", -574562502, null), cljs.core.list(new cljs.core.Symbol(null, "first", "first", 996428481, null), cljs.core.list(new cljs.core.Symbol(null, "get", "get", -971253014, null), cljs.core.list(new cljs.core.Symbol("clojure.core", "deref", "clojure.core/deref", 188719157, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), new cljs.core.Keyword(null, "people", "people", 1443537404))))), 
+              "Hi, I am Brent!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), h, new cljs.core.Keyword(null, "message", "message", -406056002), null], null));
             }
             throw h;
           }
@@ -36192,19 +36195,20 @@ myproject.core.test.parent_component = cljs.core.with_meta.call(null, myproject.
         cemerick.cljs.test._STAR_test_ctx_STAR_ = cljs.core.truth_(d) ? null : a;
         try {
           try {
-            var g = cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, "Hi, I am Brent!!"), myproject.test_helper.om_root__GT_$.call(null, myproject.core.root_component, myproject.core.test.app_state).text()), f = cljs.core.apply.call(null, cljs.core._EQ_, g);
+            var g = cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, "List of peopleHi, I am Brent!!Hi, I am Haley!!"), myproject.test_helper.om_root__GT_$.call(null, myproject.core.root_component, myproject.core.test.app_state).text()), f = cljs.core.apply.call(null, cljs.core._EQ_, g);
             if (f instanceof cemerick.cljs.test.TestContext) {
               throw Error("TestContext provided as [form] in `is` assertion. If using `is` with an explicit test context, use the 3-arg arity.");
             }
             cljs.core.truth_(f) ? cemerick.cljs.test.do_report.call(null, a, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "type", "type", 1174270348), new cljs.core.Keyword(null, "pass", "pass", 1574159993), new cljs.core.Keyword(null, "expected", "expected", 1583670997), cljs.core.list(new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), cljs.core.list(new cljs.core.Symbol(null, ".text", ".text", -1996712275, null), cljs.core.list(new cljs.core.Symbol(null, "om-root-\x3e$", 
-            "om-root-\x3e$", 1816523912, null), new cljs.core.Symbol(null, "root-component", "root-component", -166494948, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null))), "Hi, I am Brent!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), cljs.core.cons.call(null, cljs.core._EQ_, g), new cljs.core.Keyword(null, "message", "message", -406056002), null], null)) : cemerick.cljs.test.do_report.call(null, a, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, 
-            "type", "type", 1174270348), new cljs.core.Keyword(null, "fail", "fail", 1706214930), new cljs.core.Keyword(null, "expected", "expected", 1583670997), cljs.core.list(new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), cljs.core.list(new cljs.core.Symbol(null, ".text", ".text", -1996712275, null), cljs.core.list(new cljs.core.Symbol(null, "om-root-\x3e$", "om-root-\x3e$", 1816523912, null), new cljs.core.Symbol(null, "root-component", "root-component", -166494948, null), new cljs.core.Symbol(null, 
-            "app-state", "app-state", 130568249, null))), "Hi, I am Brent!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, cljs.core.cons.call(null, new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), g)), new cljs.core.Symbol(null, "not", "not", 1044554643, null)), new cljs.core.Keyword(null, "message", "message", -406056002), null], null));
+            "om-root-\x3e$", 1816523912, null), new cljs.core.Symbol(null, "root-component", "root-component", -166494948, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null))), "List of peopleHi, I am Brent!!Hi, I am Haley!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), cljs.core.cons.call(null, cljs.core._EQ_, g), new cljs.core.Keyword(null, "message", "message", -406056002), null], null)) : cemerick.cljs.test.do_report.call(null, a, new cljs.core.PersistentArrayMap(null, 
+            4, [new cljs.core.Keyword(null, "type", "type", 1174270348), new cljs.core.Keyword(null, "fail", "fail", 1706214930), new cljs.core.Keyword(null, "expected", "expected", 1583670997), cljs.core.list(new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), cljs.core.list(new cljs.core.Symbol(null, ".text", ".text", -1996712275, null), cljs.core.list(new cljs.core.Symbol(null, "om-root-\x3e$", "om-root-\x3e$", 1816523912, null), new cljs.core.Symbol(null, "root-component", "root-component", 
+            -166494948, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null))), "List of peopleHi, I am Brent!!Hi, I am Haley!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, cljs.core.cons.call(null, new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), g)), new cljs.core.Symbol(null, "not", "not", 1044554643, null)), new cljs.core.Keyword(null, "message", "message", -406056002), 
+            null], null));
             return f;
           } catch (h) {
             if (h instanceof Error) {
               return cemerick.cljs.test.do_report.call(null, a, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "type", "type", 1174270348), new cljs.core.Keyword(null, "error", "error", -978969032), new cljs.core.Keyword(null, "expected", "expected", 1583670997), cljs.core.list(new cljs.core.Symbol(null, "\x3d", "\x3d", -1501502141, null), cljs.core.list(new cljs.core.Symbol(null, ".text", ".text", -1996712275, null), cljs.core.list(new cljs.core.Symbol(null, "om-root-\x3e$", 
-              "om-root-\x3e$", 1816523912, null), new cljs.core.Symbol(null, "root-component", "root-component", -166494948, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null))), "Hi, I am Brent!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), h, new cljs.core.Keyword(null, "message", "message", -406056002), null], null));
+              "om-root-\x3e$", 1816523912, null), new cljs.core.Symbol(null, "root-component", "root-component", -166494948, null), new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null))), "List of peopleHi, I am Brent!!Hi, I am Haley!!"), new cljs.core.Keyword(null, "actual", "actual", 107306363), h, new cljs.core.Keyword(null, "message", "message", -406056002), null], null));
             }
             throw h;
           }
